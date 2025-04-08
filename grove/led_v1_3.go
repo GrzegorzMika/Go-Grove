@@ -6,7 +6,7 @@ import (
 )
 
 type LEDv1_3 struct {
-	devices.DigitalDevice
+	*devices.DigitalDevice
 }
 
 func (d *LEDv1_3) TurnOn() error {

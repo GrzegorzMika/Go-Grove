@@ -1,7 +1,7 @@
 package devices
 
 type DigitalDevice struct {
-	Device
+	*Device
 }
 
 func (d *DigitalDevice) Type() DeviceType {
