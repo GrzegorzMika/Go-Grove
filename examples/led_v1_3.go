@@ -30,13 +30,12 @@ func morseToLED(morseCode string, led *grove.LEDv1_3) {
 }
 
 func main() {
-	led := grove.LEDv1_3{}
-	err := led.Init(22)
+	led, err := grove.NewLEDv1_3(22)
 	if err != nil {
-		fmt.Println(err)
+		fmt.Println("Error initializing LED:", err)
 	}
 
 	// Convert to morse
 	textInMorse := morse.ToMorse(MESSAGE)
-	morseToLED(textInMorse, &led)
+	morseToLED(textInMorse, led)
 }
