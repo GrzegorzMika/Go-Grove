@@ -12,7 +12,7 @@ type LEDv1_3 struct {
 func NewLEDv1_3(pinNumber int) (*LEDv1_3, error) {
 	led := &LEDv1_3{
 		DigitalDevice: &devices.DigitalDevice{
-			Device: &devices.Device{},
+			GPIOPin: nil,
 		},
 	}
 	err := led.Init(pinNumber)
