@@ -17,14 +17,14 @@ func morseToLED(morseCode string, led *grove.LEDv1_3) {
 		switch char {
 		case '.':
 			led.TurnOn()
-			time.Sleep(100 * time.Millisecond)
-			led.TurnOff()
-			time.Sleep(100 * time.Millisecond)
-		case '-':
-			led.TurnOn()
 			time.Sleep(300 * time.Millisecond)
 			led.TurnOff()
-			time.Sleep(100 * time.Millisecond)
+			time.Sleep(300 * time.Millisecond)
+		case '-':
+			led.TurnOn()
+			time.Sleep(700 * time.Millisecond)
+			led.TurnOff()
+			time.Sleep(300 * time.Millisecond)
 		case ' ':
 			time.Sleep(700 * time.Millisecond)
 		}
@@ -48,6 +48,9 @@ func main() {
 	if err != nil {
 		fmt.Println("Error initializing LED:", err)
 	}
+	led.TurnOff()
+	// Wait for a moment to ensure the LED to be ready
+	time.Sleep(100 * time.Millisecond)
 
 	// Convert to morse
 	textInMorse := morse.ToMorse(MESSAGE)
