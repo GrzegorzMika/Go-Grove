@@ -10,7 +10,7 @@ import (
 
 var MESSAGE = "Hello, World!"
 
-func morseToLED(morseCode string, led grove.LEDv1_3) {
+func morseToLED(morseCode string, led *grove.LEDv1_3) {
 	for _, char := range morseCode {
 		switch char {
 		case '.':
@@ -30,7 +30,7 @@ func morseToLED(morseCode string, led grove.LEDv1_3) {
 }
 
 func main() {
-	led := grove.LEDv1_3{}
+	led := new(grove.LEDv1_3)
 	err := led.Init(22)
 	if err != nil {
 		fmt.Println(err)
