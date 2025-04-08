@@ -1,0 +1,8 @@
+github.com/gSpera/morse v1.1.2 h1:Wgtepe7+I/p9puCUz4bsSw9zOXnSf8tFJwqTwpgggbM=
+github.com/gSpera/morse v1.1.2/go.mod h1:AY02pEB5w0hD632QuxOs/Tfs9Gr8LUNNCqapDUhriX0=
+github.com/jonboulle/clockwork v0.4.0 h1:p4Cf1aMWXnXAUh8lVfewRBx1zaTSYKrKMF2g3ST4RZ4=
+github.com/jonboulle/clockwork v0.4.0/go.mod h1:xgRqUGwRcjKCO1vbZUEtSLrqKoPSsUpK7fnezOII0kc=
+periph.io/x/conn/v3 v3.7.2 h1:qt9dE6XGP5ljbFnCKRJ9OOCoiOyBGlw7JZgoi72zZ1s=
+periph.io/x/conn/v3 v3.7.2/go.mod h1:Ao0b4sFRo4QOx6c1tROJU1fLJN1hUIYggjOrkIVnpGg=
+periph.io/x/host/v3 v3.8.4 h1:QNleTythDd0k6Chu0n+ISrJFlf3LFig9oNbtOIkxoCc=
+periph.io/x/host/v3 v3.8.4/go.mod h1:hPq8dISZIc+UNfWoRj+bPH3XEBQqJPdFdx218W92mdc=
