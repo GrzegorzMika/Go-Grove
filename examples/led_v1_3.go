@@ -44,7 +44,7 @@ func main() {
 		fmt.Println("Errors initializing host:", errors.Join(errs...))
 	}
 
-	led, err := grove.NewLEDv1_3(22)
+	led, err := grove.NewLEDv1_3(5)
 	if err != nil {
 		fmt.Println("Error initializing LED:", err)
 	}
