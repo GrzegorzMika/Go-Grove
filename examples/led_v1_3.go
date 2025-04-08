@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"time"
 
 	"github.com/GrzegorzMika/Go-Grove/grove"
@@ -32,7 +33,7 @@ func main() {
 	led := grove.LEDv1_3{}
 	err := led.Init(22)
 	if err != nil {
-		panic(err)
+		fmt.Println(err)
 	}
 
 	// Convert to morse
